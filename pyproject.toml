@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tutorial-bigquery-tags"
+version = "0.1.0"
+description = "Tutorial para uso de tags no BigQuery para controle de acesso"
+authors = ["Lucas Rosa <lucas.de.sio@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

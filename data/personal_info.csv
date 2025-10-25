@@ -1,0 +1,13 @@
+user_id,full_name,email,phone_number,physical_address,id_document
+1,João da Silva,joao.silva@example.com,+5511987654321,"Rua das Flores, 123, São Paulo, SP",111.222.333-44
+2,Maria Oliveira,maria.oliveira@example.com,+5521912345678,"Avenida Brasil, 456, Rio de Janeiro, RJ",222.333.444-55
+3,Carlos Pereira,carlos.pereira@example.com,+5531988887777,"Praça da Liberdade, 789, Belo Horizonte, MG",333.444.555-66
+4,Ana Costa,ana.costa@example.com,+5541977776666,"Rua XV de Novembro, 101, Curitiba, PR",444.555.666-77
+5,Pedro Santos,pedro.santos@example.com,+5551966665555,"Avenida Ipiranga, 202, Porto Alegre, RS",555.666.777-88
+6,Juliana Souza,juliana.souza@example.com,+5561955554444,"Eixo Monumental, 303, Brasília, DF",666.777.888-99
+7,Lucas Fernandes,lucas.fernandes@example.com,+5571944443333,"Avenida Oceânica, 404, Salvador, BA",777.888.999-00
+8,Camila Lima,camila.lima@example.com,+5581933332222,"Avenida Boa Viagem, 505, Recife, PE",888.999.000-11
+9,Gabriel Alves,gabriel.alves@example.com,+5585922221111,"Avenida Beira Mar, 606, Fortaleza, CE",999.000.111-22
+10,Fernanda Ribeiro,fernanda.ribeiro@example.com,+5592911110000,"Avenida Eduardo Ribeiro, 707, Manaus, AM",000.111.222-33
+11,Rafael Martins,rafael.martins@example.com,+5527999998888,"Rua Sete de Setembro, 808, Vitória, ES",123.456.789-10
+12,Beatriz Rocha,beatriz.rocha@example.com,+5548988887777,"Avenida Beira Mar Norte, 909, Florianópolis, SC",234.567.890-12
