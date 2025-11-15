@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bq-taxonomy"
+version = "0.1.0"
+description = "Sync da taxonomia via Dataform no BQ"
+authors = ["Lucas Rosa <lucas.de.sio@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-cloud-dataform = "^0.7.0"
+google-cloud-logging = "^3.12.1"
+functions-framework = "^3.10.0"
+google-cloud-bigquery = "^3.38.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

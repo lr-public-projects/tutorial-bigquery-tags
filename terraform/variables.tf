@@ -18,3 +18,8 @@ variable "masked_pii_readers" {
   description = "Leitores de dados protegidos"
   type = list(string)
 }
+
+variable "terraform_bucket" {
+  description = "Bucket para uso do terraform"
+  type = string
+}

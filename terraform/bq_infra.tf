@@ -10,44 +10,51 @@ resource "google_bigquery_table" "personal_info" {
   table_id            = "PERSONAL_INFO"
   deletion_protection = false
 
-  schema = jsonencode([
-    {
-      "name": "user_id",
-      "type": "STRING",
-      "mode": "NULLABLE",
-      "description": "Identificador do usuário"
-    },
-    {
-      "name": "full_name",
-      "type": "STRING",
-      "mode": "NULLABLE",
-      "description": "Nome completo do usuário"
-    },
-    {
-      "name": "email",
-      "type": "STRING",
-      "mode": "NULLABLE",
-      "description": "E-mail do usuário",
-    },
-    {
-      "name": "phone_number",
-      "type": "STRING",
-      "mode": "NULLABLE",
-      "description": "Número de telefone do usuário",
-    },
-    {
-      "name": "physical_address",
-      "type": "STRING",
-      "mode": "NULLABLE",
-      "description": "Endereço físico do usuário",
-    },
-    {
-      "name": "id_document",
-      "type": "STRING",
-      "mode": "NULLABLE",
-      "description": "Documento de identificação do usuário",
-    }
-  ])
+  schema = format("%s", jsonencode(
+    [
+      {
+        "name" : "user_id",
+        "type" : "STRING",
+        "mode" : "NULLABLE",
+        "description" : "Identificador do usuário"
+      },
+      {
+        "name" : "full_name",
+        "type" : "STRING",
+        "mode" : "NULLABLE",
+        "description" : "Nome completo do usuário"
+      },
+      {
+        "name" : "email",
+        "type" : "STRING",
+        "mode" : "NULLABLE",
+        "description" : "E-mail do usuário",
+        "policyTags" : {
+          "names" : [
+            google_data_catalog_policy_tag.pii_policy_email.name
+          ]
+        }
+      },
+      {
+        "name" : "phone_number",
+        "type" : "STRING",
+        "mode" : "NULLABLE",
+        "description" : "Número de telefone do usuário",
+      },
+      {
+        "name" : "physical_address",
+        "type" : "STRING",
+        "mode" : "NULLABLE",
+        "description" : "Endereço físico do usuário",
+      },
+      {
+        "name" : "id_document",
+        "type" : "STRING",
+        "mode" : "NULLABLE",
+        "description" : "Documento de identificação do usuário",
+      }
+    ]
+  ))
 }
 
 resource "google_bigquery_table" "financial_info" {
